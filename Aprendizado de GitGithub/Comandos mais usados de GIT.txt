@@ -1,0 +1,72 @@
+- Git é um sistema distribuído opensource de controle de versão. 
+Comandos e o que cada um faz: 
+
+1- git config --global -e 
+(responsável pelas opções de configuração do GIT, utilizando no terminal o comando)
+
+2- Git Status 
+(Ao executar o comando git status, é possível obter o status completo do repositório (diretório onde os arquivos do seu projeto serão armazenados).
+
+3- Git commit
+(esse comando visa definir um ponto de verificação no processo de desenvolvimento, para o qual você pode voltar mais tarde, se necessário.
+git commit -m "mensagem explicando a mudança no código")
+
+4- Git log 
+() [ainda não sei sua utilidade]
+
+5- Git init 
+(Cria um repositório vazio, ou transforma uma pasta existente que não possua controle de versão em um repositório)
+
+6- Git clone
+(O Git clone é um comando para baixar o código-fonte existente de um repositório remoto (como o Github, por exemplo)).
+
+7- Git branch
+(Com as branches (ou ramificações), vários desenvolvedores podem trabalhar paralelamente no mesmo projeto) [Ainda estou aprendendo a usar 16/04/23]
+
+8- Git checkout
+(Esse é um dos comandos git mais utilizados. Para trabalhar em uma branch, primeiro você precisa mudar para ela. Apesar de parecer algo óbvio, 
+não ir para a branch que você acabou de criar e na qual quer trabalhar é um erro bastante comum no começo.
+Neste contexto, o principal objetivo do git checkout é ajudar você a mudar de uma branch para outra ou então verificar arquivos e commits)
+
+9- Git status
+(Sim, já falamos sobre ele, mas vale retomar: o comando Git status serve para fornecer algumas informações importantes sobre a branch
+ em que você estiver no momento, incluindo se ela está atualizada em relação à master e quais arquivos foram alterados.)
+
+10- Git diff
+(Apesar de o git status fornecer muitas informações relevantes, às vezes é preciso ir além.  
+Caso você queira, por exemplo, saber exatamente o que você alterou (e não apenas quais arquivos foram alterados), 
+o melhor a se fazer é utilizar esse comando.)
+
+11- Git add
+(Quando criamos, modificamos ou excluímos um arquivo, essas alterações ocorrerão em nosso ambiente local e não serão incluídas no próximo commit (a menos que alteremos as configurações).
+
+Para incluir as alterações de um arquivo em nosso próximo commit, será preciso usar o comando git add.
+
+Para adicionar apenas um arquivo:
+
+git add <arquivo>
+Para adicionar, de uma vez, todos os arquivos modificados:
+
+git add -A)
+
+12-Git push
+(Após confirmar as alterações, a próxima coisa que você deseja fazer é enviar as alterações para o servidor remoto usando o comando git push:
+
+git push <remote> <nome-do-branch>
+No entanto, se seu branch for criado recentemente, você também precisará fazer upload do branch com o seguinte comando:
+
+git push -u origin <nome-do-branch>)
+
+13- Git pull
+O git pull é usado para obter atualizações do repositório remoto. (ainda preciso estudar mais sobre esse comando)
+
+14- Git revert
+Existem várias maneiras de desfazer nossas alterações local ou remotamente (dependendo da necessidade), mas devemos usar esses comandos com cuidado para evitar problemas.
+Uma maneira segura de desfazer os commits é usando git revert. (Ainda preciso estudar mais sobre esse comando)
+
+15- Git merge
+Quando você conclui o desenvolvimento em sua branch e tudo funciona bem, sem conflitos, a etapa final é mesclar as branches, isso é feito com o comando git merge.
+Como falamos no tópico sobre git pull, esse comando vai mesclar, no seu repositório local, todas as alterações feitas.
+git merge <nome-da-branch>
+
+16- 
